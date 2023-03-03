@@ -17,6 +17,8 @@
 		FF0BD9D229B188CB00E0010D /* MPSPathTracing_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BD9D129B188CB00E0010D /* MPSPathTracing_SwiftTests.swift */; };
 		FF0BD9DC29B188CB00E0010D /* MPSPathTracing_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BD9DB29B188CB00E0010D /* MPSPathTracing_SwiftUITests.swift */; };
 		FF0BD9DE29B188CB00E0010D /* MPSPathTracing_SwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BD9DD29B188CB00E0010D /* MPSPathTracing_SwiftUITestsLaunchTests.swift */; };
+		FF0BD9EB29B1893900E0010D /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BD9EA29B1893900E0010D /* MathUtils.swift */; };
+		FF0BD9ED29B189EA00E0010D /* Renderer+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BD9EC29B189EA00E0010D /* Renderer+Update.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		FF0BD9D729B188CB00E0010D /* MPSPathTracing-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MPSPathTracing-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF0BD9DB29B188CB00E0010D /* MPSPathTracing_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSPathTracing_SwiftUITests.swift; sourceTree = "<group>"; };
 		FF0BD9DD29B188CB00E0010D /* MPSPathTracing_SwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSPathTracing_SwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF0BD9EA29B1893900E0010D /* MathUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
+		FF0BD9EC29B189EA00E0010D /* Renderer+Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Renderer+Update.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +108,9 @@
 				FF0BD9B829B188CA00E0010D /* AppDelegate.swift */,
 				FF0BD9BA29B188CA00E0010D /* ShaderTypes.h */,
 				FF0BD9BB29B188CA00E0010D /* Renderer.swift */,
+				FF0BD9EC29B189EA00E0010D /* Renderer+Update.swift */,
 				FF0BD9BD29B188CA00E0010D /* GameViewController.swift */,
+				FF0BD9EA29B1893900E0010D /* MathUtils.swift */,
 				FF0BD9BF29B188CA00E0010D /* Shaders.metal */,
 				FF0BD9C129B188CA00E0010D /* Main.storyboard */,
 				FF0BD9C429B188CB00E0010D /* Assets.xcassets */,
@@ -264,7 +270,9 @@
 				FF0BD9C029B188CA00E0010D /* Shaders.metal in Sources */,
 				FF0BD9BC29B188CA00E0010D /* Renderer.swift in Sources */,
 				FF0BD9BE29B188CA00E0010D /* GameViewController.swift in Sources */,
+				FF0BD9ED29B189EA00E0010D /* Renderer+Update.swift in Sources */,
 				FF0BD9B929B188CA00E0010D /* AppDelegate.swift in Sources */,
+				FF0BD9EB29B1893900E0010D /* MathUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
