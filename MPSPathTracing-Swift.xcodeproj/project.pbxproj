@@ -21,6 +21,7 @@
 		FF0BD9ED29B189EA00E0010D /* Renderer+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BD9EC29B189EA00E0010D /* Renderer+Update.swift */; };
 		FF0BDA2B29B1E77100E0010D /* Utils.metal in Sources */ = {isa = PBXBuildFile; fileRef = FF0BDA2A29B1E77100E0010D /* Utils.metal */; };
 		FF0BDA2E29B1E8A400E0010D /* RTKernels.metal in Sources */ = {isa = PBXBuildFile; fileRef = FF0BDA2D29B1E8A400E0010D /* RTKernels.metal */; };
+		FF0BDA3029B1F65500E0010D /* Renderer+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BDA2F29B1F65500E0010D /* Renderer+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		FF0BDA2A29B1E77100E0010D /* Utils.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Utils.metal; sourceTree = "<group>"; };
 		FF0BDA2C29B1E78A00E0010D /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		FF0BDA2D29B1E8A400E0010D /* RTKernels.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RTKernels.metal; sourceTree = "<group>"; };
+		FF0BDA2F29B1F65500E0010D /* Renderer+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Renderer+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				FF0BD9B829B188CA00E0010D /* AppDelegate.swift */,
 				FF0BD9BB29B188CA00E0010D /* Renderer.swift */,
 				FF0BD9EC29B189EA00E0010D /* Renderer+Update.swift */,
+				FF0BDA2F29B1F65500E0010D /* Renderer+Utils.swift */,
 				FF0BD9BD29B188CA00E0010D /* GameViewController.swift */,
 				FF0BD9EA29B1893900E0010D /* MathUtils.swift */,
 				FF0BD9BF29B188CA00E0010D /* Shaders.metal */,
@@ -279,6 +282,7 @@
 				FF0BD9BC29B188CA00E0010D /* Renderer.swift in Sources */,
 				FF0BDA2E29B1E8A400E0010D /* RTKernels.metal in Sources */,
 				FF0BD9BE29B188CA00E0010D /* GameViewController.swift in Sources */,
+				FF0BDA3029B1F65500E0010D /* Renderer+Utils.swift in Sources */,
 				FF0BD9ED29B189EA00E0010D /* Renderer+Update.swift in Sources */,
 				FF0BD9B929B188CA00E0010D /* AppDelegate.swift in Sources */,
 				FF0BD9EB29B1893900E0010D /* MathUtils.swift in Sources */,
