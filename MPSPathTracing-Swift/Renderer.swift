@@ -25,9 +25,19 @@ class Renderer: NSObject, MTKViewDelegate {
     public let device: MTLDevice
     let commandQueue: MTLCommandQueue
     var dynamicUniformBuffer: MTLBuffer
-    var pipelineState: MTLRenderPipelineState
     var depthState: MTLDepthStencilState
     var colorMap: MTLTexture
+
+    var pipelineState: MTLRenderPipelineState
+
+    var rayPipeline: MTLComputePipelineState
+    var shadePipeline: MTLComputePipelineState
+    var shadowPipeline: MTLComputePipelineState
+    var accumulatePipeline: MTLComputePipelineState
+
+    var renderTargets: [MTLTexture?] = [nil, nil]
+    var accumulationTargets: [MTLTexture?] = [nil, nil]
+    var randomTexture: MTLTexture
     
     let inFlightSemaphore = DispatchSemaphore(value: maxBuffersInFlight)
     
@@ -36,6 +46,7 @@ class Renderer: NSObject, MTKViewDelegate {
     var uniformBufferIndex = 0
     
     var uniforms: UnsafeMutablePointer<Uniforms>
+    var rtUniforms: UnsafeMutablePointer<RTUniforms>
     
     var projectionMatrix: matrix_float4x4 = matrix_float4x4()
     
@@ -60,6 +71,8 @@ class Renderer: NSObject, MTKViewDelegate {
         metalKitView.depthStencilPixelFormat = MTLPixelFormat.depth32Float_stencil8
         metalKitView.colorPixelFormat = MTLPixelFormat.bgra8Unorm_srgb
         metalKitView.sampleCount = 1
+
+        buildComputePipelinesWithDevice(device: device, metalKitView: metalKitView)
         
         let mtlVertexDescriptor = Renderer.buildMetalVertexDescriptor()
         
